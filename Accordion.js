@@ -30,6 +30,7 @@ export default class Accordion extends Component {
     underlayColor: PropTypes.string,
     touchableComponent: PropTypes.func,
     touchableProps: PropTypes.object,
+    viewProps: PropTypes.object,
     disabled: PropTypes.bool,
     expandFromBottom: PropTypes.bool,
     onAnimationEnd: PropTypes.func,
