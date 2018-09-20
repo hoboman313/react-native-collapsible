@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  View,
-  Platform,
-  TouchableHighlight,
-  TouchableNativeFeedback,
-} from 'react-native';
+import { View, TouchableHighlight } from 'react-native';
 import Collapsible from './Collapsible';
 import { ViewPropTypes } from './config';
 
@@ -40,8 +35,7 @@ export default class Accordion extends Component {
     underlayColor: 'black',
     disabled: false,
     expandFromBottom: false,
-    touchableComponent:
-      Platform.OS === 'android' ? TouchableNativeFeedback : TouchableHighlight,
+    touchableComponent: TouchableHighlight,
     renderSectionTitle: () => null,
     onAnimationEnd: () => null,
   };
